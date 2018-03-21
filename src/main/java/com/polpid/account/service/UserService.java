@@ -7,10 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-/**
- * Created by blusky10 on 2018. 3. 20..
- */
-@Service("userService")
+@Service
 public class UserService {
 
     @Autowired

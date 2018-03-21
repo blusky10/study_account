@@ -24,9 +24,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
 
-/**
- * Created by blusky10 on 2018. 3. 20..
- */
 @Controller
 public class RegisterController {
 
@@ -73,7 +70,7 @@ public class RegisterController {
 
             userService.saveUser(user);
 
-            String appUrl = request.getScheme() + "://" + request.getServerName();
+            String appUrl = request.getScheme() + ":8080//" + request.getServerName();
 
             SimpleMailMessage registrationEmail = new SimpleMailMessage();
             registrationEmail.setTo(user.getEmail());

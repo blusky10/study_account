@@ -7,9 +7,6 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
-/**
- * Created by blusky10 on 2018. 3. 20..
- */
 @Entity
 @Data
 @NoArgsConstructor
