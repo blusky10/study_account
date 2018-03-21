@@ -55,7 +55,7 @@ public class RegisterController {
 
         LOGGER.debug("[ACCOUNT_LOGGER] userExists : " + userExists);
 
-        if (!userExists.isPresent()) {
+        if (userExists.isPresent()) {
             modelAndView.addObject("alreadyRegisteredMessage", "Oops!  There is already a user registered with the email provided.");
             modelAndView.setViewName("register");
             bindingResult.reject("email");
