@@ -23,7 +23,9 @@ public class SigninController {
 
     @RequestMapping(value="/signin", method = RequestMethod.POST)
     public ModelAndView sigin(ModelAndView modelAndView, @Valid User user, BindingResult bindingResult, HttpServletRequest request){
-        modelAndView.setViewName("signin");
+
+        modelAndView.addObject("user", user);
+        modelAndView.setViewName("home");
 
         return modelAndView;
     }
